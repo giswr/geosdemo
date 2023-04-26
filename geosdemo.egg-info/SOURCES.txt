@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+geosdemo/__init__.py
+geosdemo/foliumap.py
+geosdemo/geosdemo.py
+geosdemo.egg-info/PKG-INFO
+geosdemo.egg-info/SOURCES.txt
+geosdemo.egg-info/dependency_links.txt
+geosdemo.egg-info/not-zip-safe
+geosdemo.egg-info/requires.txt
+geosdemo.egg-info/top_level.txt
+tests/test_geosdemo.py

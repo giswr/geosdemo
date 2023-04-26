@@ -1,0 +1,75 @@
+site_name: geosdemo
+
+site_url: https://geosdemo.gishub.org
+
+repo_url: https://github.com/giswqs/geosdemo
+
+theme:
+    palette:
+        scheme: preference
+    name: material
+    icon:
+        repo: fontawesome/brands/github
+    features:
+        - navigation.instant
+        - search.highlight
+        # - navigation.expand
+        # - navigation.tabs
+    custom_dir: "docs/overrides"
+
+plugins:
+    - search
+    - mkdocstrings
+    - git-revision-date
+    - mkdocs-jupyter:
+          include_source: True
+          execute: True
+          #   ignore_h1_titles: True
+          #   execute_ignore: "*.ipynb"
+
+markdown_extensions:
+    - attr_list
+    - pymdownx.superfences
+    - pymdownx.highlight:
+          linenums: true
+    - toc:
+          permalink: true
+
+# extra:
+#     analytics:
+#         provider: google
+#         property: UA-XXXXXXXXX-X
+
+nav:
+    - Home: index.md
+    - Installation: installation.md
+    - Usage: usage.md
+    - Contributing: contributing.md
+    - FAQ: faq.md
+    - Changelog: changelog.md
+    - Report Issues: https://github.com/giswqs/geosdemo/issues
+    - Examples:
+          - examples/intro.ipynb
+          - examples/folium.ipynb
+          - examples/raster.ipynb
+          - examples/ipywidgets.ipynb
+          - examples/ipywidgets_box.ipynb
+          - examples/ipywidgets_events.ipynb
+          - examples/toolbar.ipynb
+    - API Reference:
+          - geosdemo module: geosdemo.md
+          - foliumap module: foliumap.md
+    - Python Basics:
+          - python/01_getting_started.ipynb
+          - python/02_variables_data_types.ipynb
+          - python/03_introducing_lists.ipynb
+          - python/04_working_with_lists.ipynb
+          - python/05_if_statements.ipynb
+          - python/06_dictionaries.ipynb
+          - python/07_user_input_while_loops.ipynb
+          - python/08_functions.ipynb
+          - python/09_classes.ipynb
+          - python/10_files_and_exceptions.ipynb
+    - Assignments:
+          - labs/lab4.ipynb
+          - labs/lab5.ipynb
