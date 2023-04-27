@@ -1,3 +1,5 @@
+"""Main module."""
+
 import numpy as np
 
 def compute_dsdf(drought_data, severity_threshold, duration_thresholds):
