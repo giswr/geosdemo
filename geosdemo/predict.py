@@ -5,13 +5,13 @@ def compute_dsdf(drought_data, severity_threshold, duration_thresholds):
     Compute the Drought Severity Duration Frequency (DSDF) for a given set of drought data, 
     severity threshold, and duration thresholds.
     
-    Arguments:
-    drought_data -- a list or array of drought severity values
-    severity_threshold -- a float representing the severity threshold (e.g., 0.5 for moderate drought)
-    duration_thresholds -- a list or array of duration thresholds in days (e.g., [7, 14, 30, 60])
+    Args:
+        drought_data (ndarray): a list or array of drought severity values
+        severity_threshold (str): a float representing the severity threshold (e.g., 0.5 for moderate drought)
+        duration_thresholds (ndarray):a list or array of duration thresholds in days (e.g., [7, 14, 30, 60])
     
     Returns:
-    A 2D numpy array containing the DSDF values for each duration threshold and return period
+        ndarray: A 2D numpy array containing the DSDF values for each duration threshold and return period
     """
     # Sort the drought data in descending order
     sorted_data = np.sort(drought_data)[::-1]
@@ -45,14 +45,14 @@ def predict_rainfall_3d(rainfall_data, temp_data, humidity_data, prediction_data
     """
     Predict 3D netCDF rainfall with independent variables like temperature and humidity netCDF.
     
-    Arguments:
-    rainfall_data -- xarray Dataset of historical rainfall data
-    temp_data -- xarray Dataset of historical temperature data
-    humidity_data -- xarray Dataset of historical humidity data
-    prediction_data -- xarray Dataset of input data to predict rainfall
+    Args:
+        rainfall_data (ndarray): xarray Dataset of historical rainfall data
+        temp_data (str): xarray Dataset of historical temperature data
+        humidity_data (ndarray): xarray Dataset of historical humidity data
+        prediction_data (ndarray): xarray Dataset of input data to predict rainfall
     
     Returns:
-    A 3D xarray Dataset containing the predicted rainfall values for the input data
+        ndarray: A 3D xarray Dataset containing the predicted rainfall values for the input data
     """
     # Extract the input and output variables from the rainfall data
     X = np.stack([temp_data.values.flatten(), humidity_data.values.flatten()], axis=1)
