@@ -1,18 +1,16 @@
 import numpy as np
 
 def compute_dsdf(drought_data, severity_threshold, duration_thresholds):
-    """
-    Compute the Drought Severity Duration Frequency (DSDF) for a given set of drought data, 
-    severity threshold, and duration thresholds.
-    
+    """Compute the Drought Severity Duration Frequency (DSDF) for a given set of drought data, 
+        severity threshold, and duration thresholds.
     Args:
         drought_data (ndarray): a list or array of drought severity values
         severity_threshold (str): a float representing the severity threshold (e.g., 0.5 for moderate drought)
-        duration_thresholds (ndarray):a list or array of duration thresholds in days (e.g., [7, 14, 30, 60])
-    
+        duration_thresholds (ndarray): a list or array of duration thresholds in days (e.g., [7, 14, 30, 60])
+
     Returns:
         ndarray: A 2D numpy array containing the DSDF values for each duration threshold and return period
-    """
+    """    
     # Sort the drought data in descending order
     sorted_data = np.sort(drought_data)[::-1]
     
