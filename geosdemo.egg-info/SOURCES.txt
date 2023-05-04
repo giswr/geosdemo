@@ -7,6 +7,7 @@ setup.py
 geosdemo/__init__.py
 geosdemo/foliumap.py
 geosdemo/geosdemo.py
+geosdemo/predict.py
 geosdemo.egg-info/PKG-INFO
 geosdemo.egg-info/SOURCES.txt
 geosdemo.egg-info/dependency_links.txt
