@@ -2,7 +2,7 @@ site_name: geosdemo
 
 site_url: https://geosdemo.gishub.org
 
-repo_url: https://github.com/giswqs/geosdemo
+repo_url: https://github.com/giswr/geosdemo
 
 theme:
     palette:
@@ -47,7 +47,7 @@ nav:
     - Contributing: contributing.md
     - FAQ: faq.md
     - Changelog: changelog.md
-    - Report Issues: https://github.com/giswqs/geosdemo/issues
+    - Report Issues: https://github.com/giswr/geosdemo/issues
     - Examples:
           - examples/intro.ipynb
           - examples/folium.ipynb
