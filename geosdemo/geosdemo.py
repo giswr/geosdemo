@@ -77,7 +77,7 @@ import ipywidgets as widgets
 
 class Map(ipyleaflet.Map):
     
-    def __init__(self, center=[20, 0], zoom=2, **kwargs) -> None:
+    def __init__(self, center=[6, 0], zoom=2, **kwargs) -> None:
 
         if "scroll_wheel_zoom" not in kwargs:
             kwargs["scroll_wheel_zoom"] = True
