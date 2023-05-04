@@ -1,6 +1,6 @@
 # geosdemo
 
-[![image](https://img.shields.io/pypi/v/geosdemo.svg)](https://pypi.python.org/pypi/geosdemo)
+[![](https://img.shields.io/pypi/v/geosdemo.svg)](https://pypi.python.org/pypi/geosdemo)
 [![image](https://img.shields.io/conda/vn/conda-forge/geosdemo.svg)](https://anaconda.org/conda-forge/geosdemo)
 
 **A python package for interactive mapping.**
